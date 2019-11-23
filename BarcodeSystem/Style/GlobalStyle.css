@@ -1,0 +1,101 @@
+﻿.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 230px;
+    background-color: ghostwhite;
+}
+
+nav {
+    margin-bottom: 0px !important;
+}
+
+.sidebar > ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+    .sidebar > ul > li {
+        height: 70px;
+        text-align: center;
+        display: table-row;
+    }
+
+        .sidebar > ul > li > a {
+            color: rgba(0, 0, 0, 0.96);
+            font-size: 2.0rem;
+            display: table-cell;
+            vertical-align: middle;
+            width: 250px;
+        }
+
+
+        .sidebar > ul > li:hover {
+            background-color: cadetblue;
+        }
+
+.sperator {
+    width: 100%;
+    margin-top: 50px;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.panel {
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+}
+
+.form-group > label {
+    padding-left: 25px !important;
+    padding-right: 0px !important;
+}
+
+.sub-panel {
+    padding: 30px;
+}
+
+button {
+    width: 150px;
+}
+
+span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+    span:hover > svg {
+        color: aliceblue;
+    }
+
+.edit {
+    float: right;
+}
+
+.garbage:hover {
+    background-color: rgba(255, 6, 2, 0.7215686274509804);
+}
+
+.edit:hover {
+    background-color: #5999d0;
+}
+
+.edit > svg {
+    top: 3.2px !important;
+    position: relative !important;
+    left: 1px;
+}
+
+.garbage > svg {
+    top: 3.7px !important;
+    position: relative !important;
+}
+textarea{
+    resize:none;
+}

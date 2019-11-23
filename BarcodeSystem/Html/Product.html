@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Style/GlobalStyle.css" rel="stylesheet" />
+    <link href="../İcons/css/all.css" rel="stylesheet" />
+    <script src="../İcons/js/all.min.js"></script>
+    <script src="../Script/Product.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ANA SAYFA</a>
+            </div>
+        </div><!--/.container-fluid -->
+    </nav>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="Product.html">Ürünler</a>
+            </li>
+            <li><a href="Category.html">Kategoriler</a></li>
+            <li>
+                <a href="Shopping.html">Alışveriş İşlemleri</a>
+            </li>
+            <li>
+                <a href="Shopping.html"> Satışlar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sperator"></div>
+    <div style="margin-left:250px;margin-right:10px;" class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-7">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ürün Adı</th>
+                            <th>Barkod No</th>
+                            <th>Fiyat</th>
+                            <th>Marka</th>
+                            <th>Kategori</th>
+                            <th>Birim Miktarı</th>
+                            <th>Stok</th>
+                            <th>KDV</th>
+                            <th style="width:68px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr id="1">
+                            <th>1</th>
+                            <td>Ülker Çikolatalı Gofret</td>
+                            <td>1213124</td>
+                            <td>5</td>
+                            <td>Ülker</td>
+                            <td>Yiyecek</td>
+                            <td>75gr</td>
+                            <td>1500</td>
+                            <td>0.18</td>
+                            <td>
+                                <div>
+                                    <span  onclick="Delete(1)"  class="garbage">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span  onclick="SelectRow(1)" class="edit"><i class="fas fa-edit"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr id="2">
+                            <th>2</th>
+                            <td>Ülker Çikolatalı Gofret</td>
+                            <td>1213124</td>
+                            <td>5</td>
+                            <td>Ülker</td>
+                            <td>Yiyecek</td>
+                            <td>75gr</td>
+                            <td>1500</td>
+                            <td>0.18</td>
+                            <td>
+                                <span onclick="Delete(2)" class="garbage">
+                                    <i class="fas fa-trash-alt"></i>
+                                </span>
+                                <span  onclick="SelectRow(2)" class="edit"><i class="fas fa-edit"></i></span>
+                            </td>
+                        </tr>
+                        <tr id="3">
+                            <th>3</th>
+                            <td>Ülker Çikolatalı Gofret</td>
+                            <td>1213124</td>
+                            <td>5</td>
+                            <td>Ülker</td>
+                            <td>Yiyecek</td>
+                            <td>75gr</td>
+                            <td>1500</td>
+                            <td>0.18</td>
+                            <td>
+                                <span onclick="Delete(3)"  class="garbage">
+                                    <i class="fas fa-trash-alt"></i>
+                                </span>
+                                <span  onclick="SelectRow(3)" class="edit"><i class="fas fa-edit"></i></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-5">
+                <div class="panel">
+                    <div class="sub-panel">
+                        <form>
+                            <div class="form-group row">
+                                <label for="ID" class="col-md-3 col-form-label">ID</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="ID" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ProductName" class="col-md-3 col-form-label">Ürün Adı</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="ProductName" placeholder="Ürün Adı">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="BarcodeNo" class="col-md-3 col-form-label">Barkod No</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="BarcodeNo" placeholder="Barkod No">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="UnitPrice" class="col-md-3 col-form-label">Fiyat</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="UnitPrice" placeholder="Fiyat">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ProductBrand" class="col-md-3 col-form-label">Marka</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="ProductBrand" placeholder="Marka">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Category" class="col-md-3 col-form-label">Kategori</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="Category" placeholder="Kategori">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="QuantityPerUnit" class="col-md-3 col-form-label">Birim Miktarı</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="QuantityPerUnit" placeholder="Birim Miktarı">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="UnitInStock" class="col-md-3 col-form-label">Stok</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="UnitInStock" placeholder="Stok">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="KdvRate" class="col-md-3 col-form-label">KDV</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="KdvRate" placeholder="Kdv">
+                                </div>
+                            </div>
+                            <div class=" row">
+                                <div class="col-md-3"> </div>
+                                <div style="text-align:center" class="col-md-9">
+                                    <button onclick="Add()" type="button" class="btn btn-success">EKLE</button>
+                                    <button onclick="Update()" type="button" class="btn btn-primary">GÜNCELLE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+</html>

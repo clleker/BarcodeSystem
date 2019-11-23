@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Style/GlobalStyle.css" rel="stylesheet" />
+    <link href="../İcons/css/all.css" rel="stylesheet" />
+    <script src="../İcons/js/all.min.js"></script>
+    <script src="../Script/Category.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ANA SAYFA</a>
+            </div>
+        </div><!--/.container-fluid -->
+    </nav>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="Product.html">Ürünler</a>
+            </li>
+            <li><a href="Category.html">Kategoriler</a></li>
+            <li>
+                <a href="Shopping.html">Alışveriş İşlemleri</a>
+            </li>
+            <li>
+                <a href="Shopping.html"> Satışlar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sperator"></div>
+    <div style="margin-left:250px;margin-right:10px;" class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-7">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Resim</th>
+                            <th>Kategori Adı</th>
+                            <th>Açıklama</th>
+                            <th style="width:68px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr id="1">
+                            <th>1</th>
+                            <td>.....</td>
+                            <td>İçecek</td>
+                            <td>1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.  </td>
+                            <td>
+                                <div>
+                                    <span onclick="Delete(1)" class="garbage">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span  onclick="SelectRow(1)" class="edit"><i class="fas fa-edit"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr id="2">
+                            <th>2</th>
+                            <td>.....</td>
+                            <td>İçecek</td>
+                            <td>1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.  </td>
+                            <td>
+                                <div>
+                                    <span onclick="Delete(2)"  class="garbage">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span onclick="SelectRow(2)" class="edit"><i class="fas fa-edit"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="3">
+                            <th>3</th>
+                            <td>.....</td>
+                            <td>İçecek</td>
+                            <td>1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.  </td>
+                            <td>
+                                <div>
+                                    <span onclick="Delete(3)" class="garbage">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                    <span onclick="SelectRow(3)" class="edit"><i class="fas fa-edit"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-5">
+                <div class="panel">
+                    <div class="sub-panel">
+                        <form>
+                            <div class="form-group row">
+                                <label for="ID" class="col-md-3 col-form-label">ID</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="ID" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="CategoryImage" class="col-md-3 col-form-label">Resim</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="CategoryImage" placeholder="Kategori Resmi">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="CategoryName" class="col-md-3 col-form-label">Kategori Adı</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="CategoryName" placeholder="Kategori Adı">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Description" class="col-md-3 col-form-label">Açıklama</label>
+                                <div class="col-md-9">
+                                    <textarea rows="5" type="text" class="form-control" id="Description" placeholder="Açıklama"></textarea>
+                                </div>
+                            </div>
+
+                            <div class=" row">
+                                <div class="col-md-3"> </div>
+                                <div style="text-align:center" class="col-md-9">
+                                    <button onclick="Add()" type="button" class="btn btn-success">EKLE</button>
+                                    <button onclick="Update()" type="button" class="btn btn-primary">GÜNCELLE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+</html>
